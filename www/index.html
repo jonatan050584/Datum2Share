@@ -9,13 +9,12 @@
 	<link rel="stylesheet" href="assets/chart.css">
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/jquery.mobile.custom.min.js"></script>
-	<script src="assets/js/jquery.csv-0.71.min.js"></script>
 	<script src="assets/js/header.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/home.js"></script>
 	<script src="assets/js/menu.js"></script>
 	<script src="assets/js/contacto.js"></script>
-	<script src="assets/js/categoria.js?rad=2"></script>
+	<script src="assets/js/categoria.js"></script>
 	<script src="assets/js/sondeo.js"></script>
 	<script src="assets/js/graphs/pie.js"></script>
 	<script src="assets/js/graphs/line.js"></script>
@@ -23,12 +22,14 @@
 	<script src="assets/highcharts/highstock.js"></script>
     <script src="assets/highcharts/data.js"></script>
     <script src="assets/highcharts/exporting.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
+    
 	<script src="assets/js/canvg/rgbcolor.js"></script>
 	<script src="assets/js/canvg/StackBlur.js"></script>
 	<script src="assets/js/canvg/canvg.js"></script>
+	<script src="cordova.js"></script>
 </head>
 <body>
+
 <div id="nav">
 	<div class="back"></div>
 	<div class="actions">
@@ -113,5 +114,6 @@ Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess
 		</div>
 	</div>
 </div>
+<button onclick="window.plugins.socialsharing.share('Message only',null,null,function(){alert(1)},function(errormsg){alert(errormsg)})">message only</button>
 </body>
 </html>
