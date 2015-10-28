@@ -1,0 +1,288 @@
+body{
+	margin: 0px;
+	padding: 0px;
+
+}
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+.clear{
+	clear: both;
+}
+#nav{
+	height: 50px;
+	background: #9e027e;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+#nav .titulo{
+	font-family: 'HelveticaNeueBold';
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 19px;
+}
+#nav .back{
+	position: absolute;
+	background: url("images/flecha.png");
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	display: none;
+}
+#nav .actions{
+	position: absolute;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	display: none;
+	
+}
+#nav .actions.activo{
+	opacity: 0.7;
+}
+#nav .actions .line{
+	width: 32px;
+	margin: auto;
+	height: 4px;
+	margin-top: 5px;
+	background: #fff;
+}
+#nav .actions .line:first-child{
+	margin-top: 15px;
+}
+.seccion{
+	margin-top: 50px;
+	display: none;
+}
+#home{
+	padding: 56px 35px;
+}
+#home .logo{
+	margin: auto;
+	display: block;
+	margin-bottom: 23px;
+}
+#home .texto{
+	text-align: center;
+	font-family: 'HelveticaNeueLight';
+	font-size: 14px;
+	line-height: 18px;
+	color: #545454;
+	margin-bottom: 30px;
+
+}
+#home .btempezar{
+	font-family: 'HelveticaNeueBold';
+	font-size: 16px;
+	color:#9e027e;
+	text-align: center;
+	line-height: 35px;
+	width: 110px;
+	margin: auto;
+	border: solid 1px #9e027e;
+}
+#menu{
+	background: #fff;
+	padding: 1px;
+}
+#menu .item{
+	width: 50%;
+	float: left;
+}
+#menu .item .bt{
+	margin: 1px;
+	background: #e9e9e9;
+	height: 150px;
+	background-size: 66px 63px;
+	background-repeat: no-repeat;
+	background-position: center 30px;
+	position: relative;
+}
+#menu .item .bt .nom{
+	font-family: 'HelveticaNeueBold';
+	position: absolute;
+	width: 100%;
+	color: #444444;
+	font-size: 17px;
+	text-align: center;
+	margin-top: 90px;
+	height: 45px;
+	display: table;
+}
+#menu .item .bt .nom .txt{
+	display: table-cell;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+#menu .item.bottom .bt{
+	background: #5d5d5d;
+	height: 35px;
+	font-family: 'HelveticaNeueBold';
+	font-size: 17px;
+	color: #fff;
+	line-height: 35px;
+	text-align: center;
+}
+
+#categoria .banner{
+	height: 205px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+#categoria .banner .area{
+	height: 100%;
+	width: 100%;
+	background:  no-repeat center 50px;
+	background-size: 63px auto;
+}
+#categoria .banner .area .nombre{
+	font-family: 'HelveticaNeueBold';
+	color: #fff;
+	padding-top: 117px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#categoria .lista .item{
+	height: 47px;
+	border-bottom: solid 1px #c7c7c7;
+	background-color: #e9e9e9;
+	display: table;
+	width: 100%;
+}
+#categoria .lista .item.ani{
+	background: #d8d8d8 url(images/sub.png) no-repeat calc(100% - 3px) center;
+	background-size: 18px auto;
+}
+#categoria .lista .item .txt{
+	display: table-cell;
+	font-size: 13px;
+	vertical-align: middle;
+	font-family: 'HelveticaNeueLight';
+	padding: 0px 9px;
+
+}
+
+#sondeo{
+	padding: 20px;
+	overflow-x: hidden;
+}
+#sondeo .grafico .area{
+	width: 100%;
+}
+#sondeo .grafico.pie .area{
+	height: 400px;
+}
+#sondeo .grafico.stockbar .area{
+	overflow-x:scroll;
+	height: 700px;
+}
+#sondeo .grafico.line .area{
+	height: 340px;
+}
+#sondeo h1.titulo{
+	color: #444444;
+	font-weight: normal;
+	font-family: 'HelveticaNeueBold';
+	font-size: 20px;
+	text-align: center;
+}
+#sondeo .subtitulo{
+	font-family: 'HelveticaNeueLight';
+	font-size: 14px;
+	line-height: 18px;
+	color: #545454;
+	text-align: center;
+}
+#sondeo .info{
+	font-family: 'HelveticaNeueLight';
+	font-size: 13px;
+	color: #545454;
+	line-height: 19px;
+}
+#sondeo .info strong{
+	font-weight: normal;
+	font-family: 'HelveticaNeueBold';
+}
+
+
+#contacto .banner{
+	height: 205px;
+	background:url(../files/imgbg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#contacto .item{
+	height: 71px;
+	background: #e9e9e9 no-repeat;
+	background-position: 25px center;
+	width: 100%;
+	display: table;
+	border-top: #c7c7c7 solid 1px;
+}
+#contacto .item.dir{
+	background-image: url("images/dir.png");
+}
+#contacto .item.tel{
+	background-image: url("images/tel.png");
+}
+#contacto .item.web{
+	background-image: url("images/web.png");
+}
+#contacto .item.em{
+	background-image: url("images/em.png");
+}
+#contacto .item:first-child{
+	border-top: none;
+}
+#contacto .item .texto{
+	display: table-cell;
+	font-family: 'HelveticaNeueLight';
+	font-size: 16px;
+	vertical-align: middle;
+	padding-left: 80px;
+	color: #545454;
+}
+#menusondeo{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	z-index: 300;
+	display: none;
+}
+#menusondeo .item{
+	height: 48px;
+	background: #e9e9e9;
+	display: table;
+	width: 100%;
+	border-top: #c7c7c7 solid 1px;
+}
+#menusondeo .item .texto{
+	display: table-cell;
+	font-family: 'HelveticaNeueLight';
+	font-size: 16px;
+	vertical-align: middle;
+	padding-left: 12px;
+	color: #545454;
+	
+}
+#menusondeo .item:first-child{
+	border-top: none;
+}
+#cubre{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.6;
+	z-index: 100;
+	display: none;
+}
