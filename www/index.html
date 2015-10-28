@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Datum</title>
+	<script type="text/javascript" src="cordova.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/webfont/stylesheet.css">
 	<link rel="stylesheet" href="assets/estilo.css">
@@ -26,7 +27,7 @@
 	<script src="assets/js/canvg/rgbcolor.js"></script>
 	<script src="assets/js/canvg/StackBlur.js"></script>
 	<script src="assets/js/canvg/canvg.js"></script>
-	<script src="cordova.js"></script>
+	
 </head>
 <body>
 
@@ -114,6 +115,6 @@ Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess
 		</div>
 	</div>
 </div>
-<button onclick="window.plugins.socialsharing.share('Message only',null,null,function(){alert(1)},function(errormsg){alert(errormsg)})">message only</button>
+<button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
 </body>
 </html>
